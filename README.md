@@ -23,7 +23,7 @@ After initializing the map in `index.js`, you should:
 ## Bonus 🏆
 
 ### Customize Marker Icons by Availability:
-Change the color of the markers based on bike availability (e.g., green for high availability, yellow for medium, red for low or no availability) Check if the API gives this information already.
+- Change the color of the markers based on bike availability (e.g., green for high availability, yellow for medium, red for low or no availability) Check if the API gives this information already.
 
 ### Add Informative Popups:
 - When clicking a marker, show a popup with the station’s name, address, the number of available bikes, and the number of available bike slots.
