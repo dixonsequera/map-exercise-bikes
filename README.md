@@ -28,5 +28,5 @@ After initializing the map in `index.js`, you should:
 ### Add Informative Popups:
 - When clicking a marker, show a popup with the station’s name, address, the number of available bikes, and the number of available bike slots.
 
-### Toggle Markers On/Off:
-- Add a button to toggle markers: if they are visible, clicking the button hides them, and if they are hidden, clicking the button shows them again.
+### Update Markers Periodically:
+- Each 10 seconds, update the markers on the map to show updated information about bike availability.
