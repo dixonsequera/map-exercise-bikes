@@ -1,18 +1,32 @@
 ![image](https://github.com/TheBridge-FullStackDeveloper/map-exercise-LA-metro/assets/33903092/51876334-cc02-4c8d-b840-c6355c85046f)
 
-# Map-exercise 🗺️
+# Map-Exercise 🗺️
 
-In this challenge, you'll need to use the map from [OpenFreeMap](https://openfreemap.org) to print in real time the public transport of Los Angeles. 🚌
-
-You will use the library [MapLibre](https://maplibre.org) to display the map and the Metro’s Realtime API to get the public transport data.
+In this challenge, students will use OpenFreeMap with the MapLibre library to visualize bike-sharing stations worldwide in real-time using the [CityBik API](https://citybik.es/). 
 
 ## Tasks 📝
 
-After you have initialized the map, in your `index.js` you have to:
+After initializing the map in `index.js`, students should:
 
-- Center the map in Los Angeles, here the coordinates: `[-118.243683, 34.052235]`.
-- Use the [Metro’s Realtime API](https://api.metro.net/) you have to display the Los Angeles public transport in the map by making petitions to this endpoint `https://api.metro.net/LACMTA/vehicle_positions/all`. 🚌
+### Set Up a Global Map View:
+- Configure the map for a global view without centering on any specific city.
+
+### Fetch Bike Networks from CityBik:
+- Use the endpoint `https://api.citybik.es/v2/networks` to retrieve all available bike-sharing networks worldwide.
+
+### Display Bike Stations with Markers:
+- For each network retrieved, add a marker on the map at the coordinates of each station.
+
+### Button to Center on User’s Location:
+- Add a button that centers the map on the user’s location using the `https://api.techniknews.net/ipgeo/` API.
 
 ## Bonus 🏆
 
-Create a code to refresh each `10` seconds and retrieve the new positions of the public transports and with a popup, display the ID of the vehicle.
+### Customize Marker Icons :
+- Change the markers for an icon of a bike (choose the one you like).
+
+### Add Informative Popups:
+- When clicking a marker, show a popup with the station’s name and the company information.
+
+### Toggle Markers On/Off:
+- Add a button to toggle markers: if they are visible, clicking the button hides them, and if they are hidden, clicking the button shows them again.
